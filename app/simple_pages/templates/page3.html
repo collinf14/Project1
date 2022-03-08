@@ -72,8 +72,8 @@
                                     <ul>
                                         <li>workflows</li>
                                         <ul>
-                                            <li>dev.yml</li>
-                                            <li>heroku</li>
+                                            <li>dev.yml <- ran pytest and deployed Heruko</li>
+                                            <li>prod.yml <- ran pytest, deployed container, and connected with Docker Hub</li>
                                         </ul>
 
                                     </ul>
@@ -83,21 +83,21 @@
                                     <ul>
                                         <li>context_processors
                                             <ul>
-                                                <li>__init__.py</li>
+                                                <li>__init__.py <- set up for pytest</li>
                                             </ul>
                                         </li>
                                         <li>simple_pages
                                             <ul>
                                                 <li>templates
                                                     <ul>
-                                                        <li>about.html</li>
-                                                        <li>index.html</li>
-                                                        <li>page1.html</li>
-                                                        <li>page2.html</li>
-                                                        <li>page3.html</li>
-                                                        <li>page4.html</li>
+                                                        <li>about.html <- html for home page</li>
+                                                        <li>index.html <- html for index page</li>
+                                                        <li>page1.html <- html for git page</li>
+                                                        <li>page2.html <- html for docker page</li>
+                                                        <li>page3.html <- html for python/flask page</li>
+                                                        <li>page4.html <- html for CI/Cd page</li>
                                                     </ul>
-                                                <li>__init__.py</li>
+                                                <li>__init__.py <- set up for pytest</li>
                                                 </li>
                                             </ul>
                                         </li>
@@ -105,58 +105,58 @@
                                             <ul>
                                                 <li>css
                                                     <ul>
-                                                        <li>style.css</li>
+                                                        <li>style.css <- held the css styles used</li>
                                                     </ul>
                                                 </li>
                                                 <li>images
                                                     <ul>
-                                                        <li>cicd.png</li>
-                                                        <li>docker2.png</li>
-                                                        <li>git-icon2.png</li>
-                                                        <li>pyhton.png</li>
+                                                        <li>cicd.png <- image for CI/CD on carousel</li>
+                                                        <li>docker2.png <- image for docker on carousel</li>
+                                                        <li>git-icon2.png <- image for git on carousel</li>
+                                                        <li>pyhton.png <- image for python on carousel</li>
                                                     </ul>
                                                 </li>
                                                 <li>js
                                                     <ul>
-                                                        <li>scripts.js</li>
+                                                        <li>scripts.js <- held the scripts used</li>
                                                     </ul>
                                                 </li>
                                             </ul>
                                         </li>
                                         <li>templates
                                             <ul>
-                                                <li>base.html</li>
+                                                <li>base.html <- base templates used for header and footer on all pages</li>
                                             </ul>
                                         </li>
-                                        <li>__init__.py</li>
-                                        <li>run.py</li>
+                                        <li>__init__.py <- set up for pytest</li>
+                                        <li>run.py <- set up for pytest</li>
                                     </ul>
                                 </li>
                                 <li>calculator
                                     <ul>
-                                        <li>__init__.py</li>
+                                        <li>__init__.py <- set up for pytest</li>
                                     </ul>
                                 </li>
                                 <li>tests
                                     <ul>
-                                        <li>__input__.py</li>
-                                        <li>calculator_test.py</li>
-                                        <li>conftest.py</li>
-                                        <li>context_process_test.py</li>
-                                        <li>simple_pages_test.py</li>
+                                        <li>__input__.py <- set up for pytest</li>
+                                        <li>calculator_test.py <- tests on calculator</li>
+                                        <li>conftest.py <- test for configuration, includes making the app, http client, and task runner</li>
+                                        <li>context_process_test.py <- tests the context processes, including environment and copyright on footer</li>
+                                        <li>simple_pages_test.py <- tests the navigation bar and contents on simple pages</li>
                                     </ul>
                                 </li>
-                                <li>.coveragerc</li>
-                                <li>.dockerignore</li>
-                                <li>.gitignore</li>
-                                <li>.pylintrc</li>
-                                <li>docker-compose.yml</li>
-                                <li>Dockerfile</li>
-                                <li>heroku.yml</li>
-                                <li>pytest.ini</li>
-                                <li>readme.md</li>
-                                <li>requirements.txt</li>
-                                <li>setup.py</li>
+                                <li>.coveragerc <- controls the pytests</li>
+                                <li>.dockerignore <- helps with git and docker connection</li>
+                                <li>.gitignore <- helps with git connection</li>
+                                <li>.pylintrc <- helps with pytests config</li>
+                                <li>docker-compose.yml <- runs docker compose and build</li>
+                                <li>Dockerfile <- creates app on docker container</li>
+                                <li>heroku.yml <- connects docker and heruko</li>
+                                <li>pytest.ini <- sets up pytests</li>
+                                <li>readme.md <- the readme file for set up of project</li>
+                                <li>requirements.txt <- shows requirements</li>
+                                <li>setup.py <- set up for pytest</li>
 
                             </ul>
 
