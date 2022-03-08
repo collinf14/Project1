@@ -1,4 +1,56 @@
 {% extends "base.html" %}
 {% block content %}
-    Index Page
+    <div id="carouselExampleInterval" class="carousel slide" data-bs-ride="carousel">
+
+        <div class="carousel-inner">
+            <div class="carousel-item active" data-bs-interval="50000">
+                <a href="{{ url_for('simple_pages.show', page="page1") }}">
+                    <img src="../static/images/git-icon2.png" class="d-block w-100" alt="..." height=500>
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="50000">
+                <a href="{{ url_for('simple_pages.show', page="page2") }}">
+                    <img src="../static/images/docker2.png" class="d-block w-100" alt="..." height=500>
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="50000">
+                <a href="{{ url_for('simple_pages.show', page="page3") }}">
+                    <img src="../static/images/python.png" class="d-block w-100" alt="..." height=500>
+                </a>
+            </div>
+            <div class="carousel-item" data-bs-interval="50000">
+                <a href="{{ url_for('simple_pages.show', page="page4") }}">
+                    <img src="../static/images/cicd.png" class="d-block w-100" alt="..." height=500>
+                </a>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleInterval"
+                data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+
+    <br/>
+    <div class="container">
+        <div class="row">
+            <div class="col ">
+                This website will explain the various technologies learned so far in IS601. There is much to get to.
+            </div>
+            <div class="col ">
+                The categories we will go through are Git, Docker, Python and Flask, and Continuous Integration and Deployment.
+            </div>
+            <div class="col ">
+                <a href="{{ url_for('simple_pages.show', page="page1") }}">
+                <button type="button" class="btn btn-primary btn-lg">Let's get started!</button>
+                </a>
+            </div>
+        </div>
+    </div>
+
 {% endblock %}

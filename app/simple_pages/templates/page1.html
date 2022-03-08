@@ -1,4 +1,77 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 1
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic">Git</h1>
+            <p class="lead my-3"> Git is a distrubuted version control software that is used to track changes in files. Its main use is for programmers looking to collaborate on a single project. It is useful in this setting because it allows many people to make changes and additions to a set of files individually and then the group can pull the changes and additions together when they see fit.</p>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">GitHub</strong>
+                    <h3 class="mb-0">Software Developer</h3>
+                    <p class="card-text mb-auto">Git uses GitHub as its internet hosting service. Its main features are
+                        version control and code management. The Github community has over 70 million developers.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Mercurial (hg)</strong>
+                    <h3 class="mb-0">Compeition</h3>
+                    <p class="mb-auto">Mercurial (hg) is an alternative version control system to git. Mercurial boosts a
+                        safer history and ability to run smoothly on an operating system.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                Branches, Merge, Commit, Tags, and Repositories
+            </h3>
+
+            <article class="blog-post">
+                <h2 class="blog-post-title">March 7, 2022 by Collin Fogerty</h2>
+
+                <p>
+                    Repositories, or repo, are an area on Github where a project is stored. Repositories can all of the files to a
+                    project are where one would push the new changes to when they are done working on their part of a project.
+                    One person can own a repository just for themselves or multiple people can share ownership of a repo.
+                    For collaborative purposes, a singular person or group can choose who has the priveledges to add changes and
+                    additions to a repository.
+                </p>
+                <p>
+                    Branches are different sets of the files on a repository. These are all unique in their own way and allow
+                    for different user to develop or experiment with the files without affecting the project as it is. Normally,
+                    the actual project is stored on a branch called main or master without users creating the other branches
+                    in order to implement their changes.
+                </p>
+                <p>
+                    A merge is bringing two branches of files together to create a single branch. This is a very useful command
+                    when a group is all working to different parts of a project on their own branches. Once they are all finished they
+                    can merge their branches and bring the whole project together.
+                </p>
+                <p>
+                    Commits are revisions to a file or set of files in a project. Commits are used to push code to a certain branch
+                    within a project. Commits allow to a user to update and save their files at any point in the process of
+                    creating a project. A user can make commit the whole project in one go or do as many commits as they like along the
+                    way. Commits also allow the user to keep a history of how the project has come along so that they can go back to a
+                    certian point if they feel the need to.
+                </p>
+                <p>
+                    Tags are messages added to commits. These messages allow the user to mark why they are making a commit
+                    in any way they deem necessary. Tags allow for a user to go through their version history and have an idea
+                    of what was going on at the point of every commit.
+                </p>
+
+
+            </article>
+        </div>
+    </div>
+
 {% endblock %}
