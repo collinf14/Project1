@@ -1,4 +1,101 @@
 {% extends "base.html" %}
 {% block content %}
-    Page 2
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic">Docker</h1>
+            <p class="lead my-3"> Docker is an open source containerization software that is used to put applications
+                into
+                packages that they can run on. Docker uses virtualization to combine source code with the operating
+                system and output
+                a usable application.</p>
+        </div>
+    </div>
+    <div class="row mb-2">
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-primary">Docker Hub</strong>
+                    <h3 class="mb-0">Container Image Library</h3>
+                    <p class="card-text mb-auto">In a similar way to Git and GitHub, Docker Hub is the hosted interenet
+                        service
+                        used by developers to store their container images. Docker Hub boosts over 100,000 container
+                        images.</p>
+                </div>
+
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                <div class="col p-4 d-flex flex-column position-static">
+                    <strong class="d-inline-block mb-2 text-success">Link to the Project</strong>
+                    <h3 class="mb-0">On Docker Hub</h3>
+                    <p class="fs-5"><a href="https://hub.docker.com/repository/docker/collinf11/project1">https://hub.docker.com/repository/docker/collinf11/project1</a></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                Containers, Images, and Docker Commands
+            </h3>
+
+            <article class="blog-post">
+                <h2 class="blog-post-title">March 7, 2022 by Collin Fogerty</h2>
+
+                <p>
+                    Containers are the executable versions of source code files. Containers allow for developers to
+                    output
+                    their projects to run on any infrastructure. Containerization and virtualization are closely related
+                    yet
+                    containers are more portable and efficient. This is because all containers run on the same operating
+                    system
+                    where as virtual machines all use individual operating systems.
+                </p>
+                <p>
+                    A container image is like a snapshot of executable code that can be run on any operating system. The
+                    source
+                    code files of a project build the container image so that it can run as intended by the developer.
+                    These images
+                    are designed to be the quickest way to get an application running and tested on. Container images on
+                    a local
+                    machine can allow a user to make changes and see their application develop in a step by step
+                    process.
+                </p>
+                <br></br>
+                <p>
+                    <u>Docker Commands</u>
+                </p>
+                <p>
+                <dl class="row">
+                    <dt class="col-sm-5">docker build</dt>
+                    <dd class="col-sm-10">Builds a container image. How to start a project on a local machine.</dd>
+                    <dt class="col-sm-5">docker run</dt>
+                    <dd class="col-sm-10">Starts a container for a project.</dd>
+                    <dt class="col-sm-5">docker -version</dt>
+                    <dd class="col-sm-10">Shows what version of docker is being used.</dd>
+                    <dt class="col-sm-5">docker ps</dt>
+                    <dd class="col-sm-10">Shows a list of the containers running with their container IDs, ports, and status.</dd>
+                    <dt class="col-sm-5">docker stop</dt>
+                    <dd class="col-sm-10">Stops a running container.</dd>
+                    <dt class="col-sm-5">docker commit</dt>
+                    <dd class="col-sm-10">Creates a new image of a container.</dd>
+                    <dt class="col-sm-5">docker push</dt>
+                    <dd class="col-sm-10">Pushed a container image onto a repository.</dd>
+                    <dt class="col-sm-5">docker pull</dt>
+                    <dd class="col-sm-10">Pulls a container image from a repository.</dd>
+                    <dt class="col-sm-5">docker rm</dt>
+                    <dd class="col-sm-10">Removes a container.</dd>
+                    <dt class="col-sm-5">docker login/logout</dt>
+                    <dd class="col-sm-10">Used to login and out of a Docker Hub account.</dd>
+
+                </dl>
+
+                </p>
+
+
+
+            </article>
+        </div>
+    </div>
 {% endblock %}
