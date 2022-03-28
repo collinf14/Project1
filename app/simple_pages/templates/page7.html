@@ -3,10 +3,10 @@
     <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
             <h1 class="display-4 fst-italic">Object Oriented Programming in Calculator</h1>
-            <p class="lead my-3"> Calculator Integration and Continuous Deployment is the practice of running a program
-                fully while editing the source code. CI/CD allows for testing and experimentation as a developer is
-                going through the process of a building a project. It is also used to get apps to consumers as quickly
-                as possible and allow for changes based on the consumers wants and needs as it is seen fit.</p>
+            <p class="lead my-3"> The Calculator is coding in the style of Object Oriented Programming. The properties
+                of OOP are the terms encapsulation, inheritance, polymorphism, and abstraction. These terms define
+                OOP and without these core concepts involved a project cannot be considered object oriented.
+                Their interpretations within the calculator an OOP project are described below.</p>
         </div>
     </div>
 
@@ -45,15 +45,30 @@
                     Inheritance
                 </h5>
                 <p>
-                    In this calculator, many of the classes need to gain objects and properties from other classes. For example the addition class cannot work without the objects and properties of the calculation class.
+                    In this calculator, many of the classes need to gain objects and properties from other classes.
+                    For example the addition class cannot work without the objects and properties of the calculation class.
                 </p>
                 <h5 class="pb-4 mb-4 fst-italic border-bottom">
                     Polymorphism
                 </h5>
                 <p>
-                    When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
-                    container image was also updated. This was also done through one of the workflows check as it
-                    allowed for connection to Docker Hub in the source code.
+                    The 'many shapes' property of OOP in this calculator means that objects in the classes of operations need to be
+                    able to do some of the same things, such as get result, but each in their own unique way. Addition
+                    needs to be able to add to get the result, Subtraction needs to subtract numbers to get the result, so
+                    on and so forth. This get_result() method needs to be able to take many shapes when it is used in
+                    the different objects of classes.
+                    <div class="col-md-6">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            calc1 = Calculator()<br>
+                            calc2 = Calculator()<br>
+                            calc1.result = 5<br>
+                            calc2.result = 6
+                            <span class="orange">assert</span> calc1.result == 5
+                            <span class="orange">assert</span> calc2.result == 6<br>
+                        </div>
+                    </div>
+                </div>
                 </p>
                 <h5 class="pb-4 mb-4 fst-italic border-bottom">
                     Abstraction

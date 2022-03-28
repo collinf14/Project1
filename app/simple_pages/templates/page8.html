@@ -25,9 +25,14 @@
                         The Single-Responsibility Principle
                     </h5>
                     <p>
-                        When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
-                        container image was also updated. This was also done through one of the workflows check as it
-                        allowed for connection to Docker Hub in the source code.
+                        This principle states that a class should only have to do a single thing. This is for
+                        simplicity and usability, a class that does more than one thing may get confusing to use and
+                        even more difficult to test. This principle is shown in different parts of the calculator. The
+                        calculation only do their said calculation. While the Division calculation does division and a
+                        check for dividing by zero, the only real act it takes is the dividing of 2 numbers. This principle
+                        carries over into the test. There is not one test that check addition and subtraction because
+                        that test would carry too much of the logic and if something was wrong with either class there
+                        would be no way to know which class had the issues just based on that test.
                     </p>
                     <h5 class="pb-4 mb-4 fst-italic border-bottom">
                         The Open-Closed Principle
@@ -41,9 +46,9 @@
                         The Liskov Substitution Principle
                     </h5>
                     <p>
-                        When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
-                        container image was also updated. This was also done through one of the workflows check as it
-                        allowed for connection to Docker Hub in the source code.
+                        Defines a part of the relationship between the inherited 'parent' and 'child' class. In this
+                        calculator, there should be no dependency in a 'child' class like Addition that a the 'parent'
+                        class of it, Calculation, needs into order to operate properly.
                     </p>
                     <h5 class="pb-4 mb-4 fst-italic border-bottom">
                         The Interface Segregation Principle
