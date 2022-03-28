@@ -1,0 +1,144 @@
+{% extends "base.html" %}
+{% block content %}
+    <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
+        <div class="col-md-6 px-0">
+            <h1 class="display-4 fst-italic">Object Oriented Programming</h1>
+            <p class="lead my-3"> Object-oriented programming (OOP) is a computer programming model that organizes
+                software design around data, or objects, rather than functions and logic. An object can be defined as a
+                data field that has unique attributes and behavior. OOP focuses on the objects that developers want to
+                manipulate rather than the logic required to manipulate them. This approach to programming is
+                well-suited for programs that are large, complex and actively updated or maintained.</p>
+        </div>
+    </div>
+
+    <div class="row g-5">
+        <div class="col-md-8">
+            <h3 class="pb-4 mb-4 fst-italic border-bottom">
+                O.O.P. Terms
+            </h3>
+
+            <article class="blog-post">
+                <h4 class="blog-post-title">March 28, 2022 by Collin Fogerty</h4>
+
+                <p>
+                <ul class="list-group list-group-numbered">
+
+                    <li><span class="boldunder">instantiation</span> means to create an instance of an object</li>
+                    <li><span class="boldunder">objects</span> are instances of a class created with specifically
+                        defined data
+                    </li>
+                    <li><span class="boldunder">class</span> is a user-defined data type that acts as the blueprint for
+                        individual objects, attributes and methods
+                    </li>
+                    <li><span class="boldunder">namespaces</span> are the structures used to organize the symbolic names assigned to objects in a Python program
+                    </li>
+                    <li><span class="boldunder">constructor</span> is a special method of a class or structure in
+                        object-oriented programming that initializes a newly created object of that type
+                    </li>
+                    <li><span class="boldunder">fixture</span> allows you to maintain a fixed and well-known environment
+                        for testing
+                    </li>
+                    <li><span class="boldunder">type hint</span> means to provide hints to a function to only accept the
+                        given data type. It is also a method by which one can force a function to accept the desired
+                        data type
+                    </li>
+                    <li><span class="boldunder">type cast</span> is a way of changing an object from one data type to
+                        the next that is used to ensure a function handles the variables correctly
+                    </li>
+                    <li><span class="boldunder">unit test</span> is a program that test classes. Each test case consists
+                        of a fixed sequence of method invocations with fixed arguments that explores a particular aspect
+                        of the behavior of the class under the test
+                    </li>
+                    <li><span class="boldunder">static</span> means that the variable or method is available at the
+                        class level. In other words, one doesn't need to create an instance of the class to access it
+                    </li>
+                    <li><span class="boldunder">instance method</span> is a method that belongs to instances of a class,
+                        not to the class itself
+                    </li>
+                    <li><span class="boldunder">instance property</span> a special sort of class member, intermediate in
+                        functionality between a field (or data member) and a method ora property is a member that
+                        provides a flexible mechanism to read, write, or compute the value of a private field
+                    </li>
+                    <li><span class="boldunder">static method</span> means a method is part of a class definition, but
+                        is not part of the objects it creates
+                    </li>
+                    <li><span class="boldunder">static property</span></li>
+                    <li><span class="boldunder">encapsulation</span> is a principle that states all important
+                        information is contained inside an object and only select information is exposed. The
+                        implementation and state of each object are privately held inside a defined class. Other objects
+                        do not have access to this class or the authority to make changes. They are only able to call a
+                        list of public functions or methods
+                    </li>
+                    <li><span class="boldunder">inheritance</span> means that classes can reuse code from other classes.
+                        Relationships and subclasses between objects can be assigned, enabling developers to reuse
+                        common logic while still maintaining a unique hierarchy
+                    </li>
+                    <li><span class="boldunder">ploymorphism</span> means that objects are designed to share behaviors
+                        and they can take on more than one form. The program will determine which meaning or usage is
+                        necessary for each execution of that object from a parent class, reducing the need to duplicate
+                        code. A child class is then created, which extends the functionality of the parent class
+                    </li>
+                    <li><span class="boldunder">abstraction</span> means that objects only reveal internal mechanisms
+                        that are relevant for the use of other objects, hiding any unnecessary implementation code. The
+                        derived class can have its functionality extended
+                    </li>
+                    <li><span class="boldunder">Overview of SOLID</span>
+                        <ul class="list-unstyled">
+                            S.O.L.I.D. stands for the first 5 principles of object orientated programming:
+                            Single-responsibility Principle, Open-closed Principle, Liskov Substitution Principle,
+                            Interface Segregation Principle, and Dependency Inversion Principle. Single-responsibility
+                            Principle (SRP) states: A class should have one and only one reason to change, meaning that
+                            a class should have only one job. Open-closed Principle (OCP) states: Objects or entities
+                            should be open for extension but closed for modification. Liskov Substitution Principle
+                            states: Let q(x) be a property provable about objects of x of type T. Then q(y) should be
+                            provable for objects y of type S where S is a subtype of T. Interface segregation principle
+                            states: A client should never be forced to implement an interface that it doesn’t use, or
+                            clients shouldn’t be forced to depend on methods they do not use. Dependency inversion
+                            principle states: Entities must depend on abstractions, not on concretions. It states that
+                            the high-level module must not depend on the low-level module, but they should depend on
+                            abstractions.
+
+                        </ul>
+                    </li>
+                    <li><span class="boldunder">Overview of Design Patterns</span>
+                        <ul class="list-unstyled">
+                            Design Patterns are general reusable solutions to commonly occurring problems within a given
+                            context in software design.
+                            Design patterns are already defined and provide an industry standard approach to solve a
+                            recurring problem, so it saves time if we use the design pattern. Using design pattern
+                            promotes re-usability that leads to more robust and highly maintainable
+                            code. Since design patterns are already defined, it makes out code easy to understand and
+                            debug.
+                            It leads to faster development and new members of the team understand it easily.
+                            Design patterns have three types: Creational, Structural, and Behavioral. Creational
+                            concerns the way objects and classes were created. It Structural concerns the composition of
+                            classes and objects. Behavioural characterizes the ways in which classes or objects
+                            interact and distribute responsibility.
+
+                        </ul>
+                    </li>
+                </ul>
+                </p>
+                Special thanks to <i>techtarget.com, microsoft.com, techopedia.com, edureka.co, javatpoint.com,
+                educba.com,
+                illinois.edu, stackoverflow.com, wikepedia.com, digitalocean.com, and medium.com </i> for their help in
+                creating this article
+            </article>
+        </div>
+        <div class="col-md-4">
+            <pic.caption class="position-sticky" style="top: 2rem;">
+
+                <img src="../static/images/cicdex2.png" class="d-block w-100" alt="..." height=250>
+                <div class="piccap">
+                    Courtesy of semaphoreci.com
+                </div>
+                <br>
+                <br>
+
+                <img src="../static/images/cicdex.png" class="d-block w-100" alt="..." height=250>
+                <div class="piccap">
+                    Courtesy of opsani.com
+                </div>
+        </div>
+    </div>
+{% endblock %}

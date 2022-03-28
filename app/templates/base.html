@@ -23,8 +23,8 @@
             <nav class="navbar navbar-expand-lg navbar-light bg-light">
                 <div class="container">
                     <h1>
-                    <a class="navbar-brand"  href="/">Technology Web Pages</a>
-                        </h1>
+                        <a class="navbar-brand" href="/">Technology Web Pages</a>
+                    </h1>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                         <span class="navbar-toggler-icon"></span>
@@ -32,22 +32,38 @@
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <ul class="navbar-nav">
                             <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="{{ url_for('simple_pages.show', page="index")}}">Home</a>
+                                <a class="nav-link active" aria-current="page"
+                                   href="{{ url_for('simple_pages.show', page="index") }}">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="about")}}">About</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="about") }}">About</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page1")}}">Git</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page1") }}">Git</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page2")}}">Docker</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page2") }}">Docker</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page3")}}">Python/Flask</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page3") }}">Python/Flask</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page4")}}">CI/CD</a>
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page4") }}">CI/CD</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page5") }}">OOP</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page6") }}">AAA
+                                    Testing</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page7") }}">Calculator
+                                    (OOP)</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="{{ url_for('simple_pages.show', page="page8") }}">Calculator
+                                    (SOLID)</a>
                             </li>
                         </ul>
                     </div>
@@ -60,10 +76,27 @@
         {% block content %}
         {% endblock %}
     </div>
+
     <footer>
-        Environment: {{ deployment_environment }} - Copyright: {{ year }}
-        Message: {{ mymessage }} {{ format_price(100) }}
+        <hr>
+        <b>Technology Web Pages</b><br>
+        Deployment - {{ deployment_environment }} - Copyright: {{ year }}<br>
+        Message: {{ mymessage }} {{ format_price(100) }}<br>
+        Contact: <a href="mailto:EMAIL_ADDRESS">clf9@njit.edu</a><br>
+
+        <a href="{{ url_for('simple_pages.show', page="about") }}">About Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="index") }}">Index Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="page1") }}">Git Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="page2") }}">Docker Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="page3") }}">Python/Flask Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="page4") }}">CI/CD Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="page5") }}">OOP Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="page6") }}">AAA Testing Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="page7") }}">Calc. (OOP) Page</a><br>
+        <a href="{{ url_for('simple_pages.show', page="page8") }}">Calc. (SOLID) Page</a><br>
+
     </footer>
+
 
 </div>
 
