@@ -2,7 +2,7 @@
 # pylint: disable=redefined-outer-name
 
 import pytest
-
+from app import create_app
 
 @pytest.fixture()
 def application():
