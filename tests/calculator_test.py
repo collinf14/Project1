@@ -3,27 +3,27 @@
 from calculator import Calculator
 
 
-def tuple_list():
+def tuple_to_list():
     """Arranging Data for AAA Testing"""
     return 1.0, 2
 
 
 def test_calculator_add_method():
-    """Testing the Calculator"""
-    # this is show using the calculator object add method
-
-    ## Act for AAA testing
-    result = Calculator.add(tuple_list())
-
-    ## Assertion for AAA testing
-    assert result == 3
+    """Testing the Calculator-Addition method"""
+    assert Calculator.add(tuple_to_list()) == 3
 
 
 def test_calculator_subtract_method():
-    """Testing the Calculator Subtract"""
-    assert Calculator.subtract(tuple_list()) == -3
+    """Testing the Calculator-Subtraction method"""
+    assert Calculator.sub(tuple_to_list()) == -3
 
 
 def test_calculator_multiply_method():
-    """Testing the Calculator Subtract"""
-    assert Calculator.multiply(tuple_list()) == 2
+    """Testing the Calculator-Multiplication method"""
+    assert Calculator.multi(tuple_to_list()) == 2
+
+
+def test_calculator_division_method():
+    """Testing the Calculator-Division method"""
+    assert Calculator.div(tuple_to_list()) == 0.5
+
