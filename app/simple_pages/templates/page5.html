@@ -23,17 +23,22 @@
                 <p>
                 <ul class="list-group list-group-numbered">
 
-                    <li><span class="boldunder">instantiation</span> means to create an instance of an object</li>
+                    <li><span class="boldunder">instantiation</span> means to create a copy of a class in memory
+                        (instance)
+                    </li>
                     <li><span class="boldunder">objects</span> are instances of a class created with specifically
                         defined data
                     </li>
-                    <li><span class="boldunder">class</span> is a user-defined data type that acts as the blueprint for
-                        individual objects, attributes and methods
+                    <li><span class="boldunder">class</span> is a user-defined data type that holds all of
+                        it own objects, attributes and methods. Created by simply say class (classname). In this
+                        calculator, there is 'class Addition' that is created as such.
                     </li>
-                    <li><span class="boldunder">namespaces</span> are the structures used to organize the symbolic names assigned to objects in a Python program
+                    <li><span class="boldunder">namespaces</span> are the structures (files and folders) that are used
+                        to properly organize program. This calculator has a folder called calculator with a file in it
+                        call __init__.py
                     </li>
-                    <li><span class="boldunder">constructor</span> is a special method of a class or structure in
-                        object-oriented programming that initializes a newly created object of that type
+                    <li><span class="boldunder">constructor</span> is the first method called of a class that sets up
+                        data for objects
                     </li>
                     <li><span class="boldunder">fixture</span> allows you to maintain a fixed and well-known environment
                         for testing
@@ -52,17 +57,24 @@
                     <li><span class="boldunder">static</span> means that the variable or method is available at the
                         class level. In other words, one doesn't need to create an instance of the class to access it
                     </li>
-                    <li><span class="boldunder">instance method</span> is a method that belongs to instances of a class,
-                        not to the class itself
+                    <li><span class="boldunder">instance method</span> is a function within a class that works on the
+                        data inside itself and can only be called after an object if its class is instantiated. Example
+                        in this calculator is the get_result() method that needs the calculator object to be
+                        instantiated beforehand.
                     </li>
-                    <li><span class="boldunder">instance property</span> a special sort of class member, intermediate in
-                        functionality between a field (or data member) and a method ora property is a member that
-                        provides a flexible mechanism to read, write, or compute the value of a private field
+                    <li><span class="boldunder">instance property</span> a variable that is attached to the class that
+                        can only be called after an object if its class is instantiated. that needs the calc1 object to
+                        be instantiated beforehand.
                     </li>
-                    <li><span class="boldunder">static method</span> means a method is part of a class definition, but
-                        is not part of the objects it creates
+                    <li><span class="boldunder">static method</span> is a function within a class that can be called
+                        without instantiating an object of its class. In this calculator, add, subtract, multiple, and
+                        divide are all static methods as they can be called anywhere without creating an object of their
+                        respective classes. Marked as @staticmethod.
                     </li>
-                    <li><span class="boldunder">static property</span></li>
+                    <li><span class="boldunder">static property</span> a variable that is attached to the class that can
+                        be called without instantiating an object of its class. Almost like a global property. Example
+                        in this calculator is the result property that can be called without
+                    </li>
                     <li><span class="boldunder">encapsulation</span> is a principle that states all important
                         information is contained inside an object and only select information is exposed. The
                         implementation and state of each object are privately held inside a defined class. Other objects
@@ -70,8 +82,9 @@
                         list of public functions or methods
                     </li>
                     <li><span class="boldunder">inheritance</span> means that classes can reuse code from other classes.
-                        Relationships and subclasses between objects can be assigned, enabling developers to reuse
-                        common logic while still maintaining a unique hierarchy
+                        An inherited class will gain the properties and methods of the class it is inheriting from. The
+                        relationship can be understood just as a child inherits the features of their parent. A 'child'
+                        class will inherit the methods and properties of their 'parent' class.
                     </li>
                     <li><span class="boldunder">ploymorphism</span> means that objects are designed to share behaviors
                         and they can take on more than one form. The program will determine which meaning or usage is
@@ -126,7 +139,7 @@
             </article>
         </div>
         <div class="col-md-4">
-            <pic.caption class="position-sticky" style="top: 2rem;">
+            <span class="position-sticky" style="top: 2rem;">
 
                 <img src="../static/images/cicdex2.png" class="d-block w-100" alt="..." height=250>
                 <div class="piccap">
@@ -139,6 +152,7 @@
                 <div class="piccap">
                     Courtesy of opsani.com
                 </div>
+            </span>
         </div>
     </div>
 {% endblock %}

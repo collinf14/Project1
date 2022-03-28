@@ -13,33 +13,56 @@
     <div class="row g-5">
         <div class="col-md-8">
             <h3 class="pb-4 mb-4 fst-italic border-bottom">
-                Project Setup
+                The Principles within this Calculator
             </h3>
 
             <article class="blog-post">
-                <h4 class="blog-post-title">March 28, 2022 by Collin Fogerty</h2>
+                <h4 class="blog-post-title">March 28, 2022 by Collin Fogerty</h4>
 
-                <p>
-                    This project was set up and continuous integrated and deployed primarily through GitHub, DockerHub,
-                    and Heroku. Through GitHub, this project ran on a main base branch and then had plenty
-                    of other branches to push changes to when the contents of the source code was updated. The method
-                    of PyTest through a workflows was triggered to check before merging a pull request. This allowed for
-                    errors to be noticed and corrections to be made before truly affecting the main branch. Deploying
-                    master to a production server came when the pull requests were fully authorized and the branches
-                    were merged into the main branch. Time after time the side branches were checked and pulled together
-                    into the main branch in order to create the final product.
-                </p>
-                <p>
-                    When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
-                    container image was also updated. This was also done through one of the workflows check as it
-                    allowed for connection to Docker Hub in the source code.
-                </p>
-
-
+                <br>
+                <br>
+                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                        The Single-Responsibility Principle
+                    </h5>
+                    <p>
+                        When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
+                        container image was also updated. This was also done through one of the workflows check as it
+                        allowed for connection to Docker Hub in the source code.
+                    </p>
+                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                        The Open-Closed Principle
+                    </h5>
+                    <p>
+                        When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
+                        container image was also updated. This was also done through one of the workflows check as it
+                        allowed for connection to Docker Hub in the source code.
+                    </p>
+                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                        The Liskov Substitution Principle
+                    </h5>
+                    <p>
+                        When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
+                        container image was also updated. This was also done through one of the workflows check as it
+                        allowed for connection to Docker Hub in the source code.
+                    </p>
+                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                        The Interface Segregation Principle
+                    </h5>
+                    <p>
+                        Sets up Inheritance. The bigger the class the harder it is to use.
+                    </p>
+                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                        The Dependency Inversion Principle
+                    </h5>
+                    <p>
+                        When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
+                        container image was also updated. This was also done through one of the workflows check as it
+                        allowed for connection to Docker Hub in the source code.
+                    </p>
             </article>
         </div>
-     <div class="col-md-4">
-            <pic.caption class="position-sticky" style="top: 2rem;">
+        <div class="col-md-4">
+            <div class="position-sticky" style="top: 2rem;">
 
                 <img src="../static/images/cicdex2.png" class="d-block w-100" alt="..." height=250>
                 <div class="piccap">
@@ -52,6 +75,7 @@
                 <div class="piccap">
                     Courtesy of opsani.com
                 </div>
+            </div>
         </div>
     </div>
 {% endblock %}
