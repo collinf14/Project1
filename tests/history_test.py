@@ -1,7 +1,7 @@
 """Testing the Calculator"""
 import pytest
 from calculator.history import Calculations as History
-from calculator.calculations import Addition
+from calculator.calculations import Addition, Subtraction, Multiplication, Division
 
 
 @pytest.fixture
@@ -18,6 +18,33 @@ def setup_addition_calculation_fixture():
     values = (1, 2)
     addition = Addition(values)
     History.add_calculation(addition)
+
+
+@pytest.fixture
+def setup_subtraction_calculation_fixture():
+    """define a function that will run each time you pass it to a test, it is called a fixture"""
+    # pylint: disable=redefined-outer-name
+    values = (1, 2)
+    sub = Subtraction(values)
+    History.add_calculation(sub)
+
+
+@pytest.fixture
+def setup_multiplication_calculation_fixture():
+    """define a function that will run each time you pass it to a test, it is called a fixture"""
+    # pylint: disable=redefined-outer-name
+    values = (1, 2)
+    multi = Multiplication(values)
+    History.add_calculation(multi)
+
+
+@pytest.fixture
+def setup_division_calculation_fixture():
+    """define a function that will run each time you pass it to a test, it is called a fixture"""
+    # pylint: disable=redefined-outer-name
+    values = (1, 2)
+    div = Division(values)
+    History.add_calculation(div)
 
 
 def test_add_calculation_to_history(clear_history_fixture, setup_addition_calculation_fixture):

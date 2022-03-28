@@ -1,5 +1,5 @@
 """Calculation history Class"""
-from calculator.operations import Addition, Subtraction, Multiplication
+from calculator.operations import Addition, Subtraction, Multiplication, Division
 
 
 class Calculations:
@@ -25,7 +25,7 @@ class Calculations:
 
     @staticmethod
     def get_last_calculation_result_value():
-        """get last calculation"""
+        """get last calculation result"""
         calculation = Calculations.get_last_calculation_object()
         return calculation.get_result()
 
@@ -36,7 +36,7 @@ class Calculations:
 
     @staticmethod
     def get_calculation(num):
-        """ get a specific calculation from history"""
+        """ get a specific calculation from history based on num"""
         return Calculations.history[num]
 
     @staticmethod
@@ -59,6 +59,12 @@ class Calculations:
 
     @staticmethod
     def add_multiplication_calculation(values):
-        """Add a multiplication object to history using factory method create"""
+        """create a multiplication object to history using factory method create"""
         Calculations.add_calculation(Multiplication.create(values))
+        return True
+
+    @staticmethod
+    def add_division_calculation(values):
+        """create a division object to history using factory method create"""
+        Calculations.add_calculation(Division.create(values))
         return True

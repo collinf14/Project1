@@ -1,14 +1,14 @@
 """Calculation and Addition, Multiplication, and Subtraction Classes """
-from calculator.operations import Addition as Add, Subtraction as Sub, Multiplication as Mult
+from calculator.operations import Addition as Add, Subtraction as Sub, Multiplication as Mult, Division as Div
 
 
 class Calculation:
     """ calculation abstract base class"""
 
     # pylint: disable=too-few-public-methods
-    def __init__(self, tuple_list: tuple):
+    def __init__(self, tuple_to_list: tuple):
         """ constructor method"""
-        self.values = Calculation.convert_args_to_tuple_of_float(tuple_list)
+        self.values = Calculation.convert_args_to_tuple_of_float(tuple_to_list)
 
     @classmethod
     def create(cls, tuple_list: tuple):
@@ -47,7 +47,7 @@ class Multiplication(Calculation):
         """get the multiplication results"""
         result = 1.0
         for value in self.values:
-            result = Mult.multiply(result, value)
+            result = Mult.multi(result, value)
         return result
 
 
@@ -58,5 +58,16 @@ class Subtraction(Calculation):
         """get the subtraction results"""
         difference_of_values = 0.0
         for value in self.values:
-            difference_of_values = Sub.subtract(difference_of_values, value)
+            difference_of_values = Sub.sub(difference_of_values, value)
         return difference_of_values
+
+
+class Division(Calculation):
+    """division calc object"""
+
+    def get_result(self):
+        """get the division results"""
+        div_value = 1.0
+        for value in self.values:
+            div_value = Div.div(div_value, value)
+        return div_value
