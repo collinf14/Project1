@@ -24,19 +24,23 @@
                     Encapsulation
                 </h5>
                 <p>
-                    In this calculator, there are a couple instances of the Encapsulation principle. The simplest exam
-                    is in the test_calculator_result_property where there are different class (calc1, calc2) that
-                    encapsulate the information that is inside them in memory. The calc1.result and calc2 classes are only  able to
+                    In this calculator, there are a couple instances of where a class keeps its method or properties
+                    private. For the most part, this is because those functions are necessary for that class and really
+                    do not have any use in other classes. In the static methods, mutli and div, below they both have a
+                    variable called calc that is used for calculations. But each variable is encapsulated only to their
+                    respective methods. Therefore, even though they have the same name they do not share value and instead
+                    stay private within the methods. This helps because they are essentially doing the same thing so it
+                    makes it much easier to name them the same so that another programmer would understand their
+                    similarity but they each work independently and do not affect each other so they both can work
+                    properly.
                     <br>
-                <div class="col-md-6">
+                <div class="col-md-8">
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
-                            calc1 = Calculator()<br>
-                            calc2 = Calculator()<br>
-                            calc1.result = 5<br>
-                            calc2.result = 6
-                            <span class="orange">assert</span> calc1.result == 5
-                            <span class="orange">assert</span> calc2.result == 6<br>
+                            <img src="../static/images/encap.png" class="d-block w-100" alt="..." height=300>
+                            <div class="piccap">
+                                Example of Encapsulation in the Calculator
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -45,27 +49,40 @@
                     Inheritance
                 </h5>
                 <p>
-                    In this calculator, many of the classes need to gain objects and properties from other classes.
-                    For example the addition class cannot work without the objects and properties of the calculation class.
+                    In this calculator, the gaining of methods and properties is essential to how the calculations of
+                addition, subtraction, multiplication, and division work. As evidenced in the example below, the addition
+                class needs to inherit the conversion of a tuple list to deal with the possibility of floating point
+                numbers. Without the child class of Addition inheriting the method from its parent, Calculation, it
+                would not be able to deal with floating point numbers and therefore not being a very accurate calculator.
+                <div class="col-md-10">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <img src="../static/images/inheri.png" class="d-block w-100" alt="..." height=600>
+                            <div class="piccap">
+                                Example of Inheritance in the Calculator
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </p>
                 <h5 class="pb-4 mb-4 fst-italic border-bottom">
                     Polymorphism
                 </h5>
                 <p>
-                    The 'many shapes' property of OOP in this calculator means that objects in the classes of operations need to be
+                    The 'many shapes' property of OOP in this calculator means that objects in the classes of operations
+                    need to be
                     able to do some of the same things, such as get result, but each in their own unique way. Addition
-                    needs to be able to add to get the result, Subtraction needs to subtract numbers to get the result, so
+                    needs to be able to add to get the result, Subtraction needs to subtract numbers to get the result,
+                    so
                     on and so forth. This get_result() method needs to be able to take many shapes when it is used in
                     the different objects of classes.
-                    <div class="col-md-6">
+                <div class="col-md-10">
                     <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
                         <div class="col p-4 d-flex flex-column position-static">
-                            calc1 = Calculator()<br>
-                            calc2 = Calculator()<br>
-                            calc1.result = 5<br>
-                            calc2.result = 6
-                            <span class="orange">assert</span> calc1.result == 5
-                            <span class="orange">assert</span> calc2.result == 6<br>
+                            <img src="../static/images/poly.png" class="d-block w-100" alt="..." height=500>
+                            <div class="piccap">
+                                Example of Polymorphism in the Calculator
+                            </div>
                         </div>
                     </div>
                 </div>
@@ -74,9 +91,22 @@
                     Abstraction
                 </h5>
                 <p>
-                    When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
-                    container image was also updated. This was also done through one of the workflows check as it
-                    allowed for connection to Docker Hub in the source code.
+                    Abstraction mostly means keep some things private and others a bit more public. In most cases the
+                private matters are implementation of a mechanism and public maker are the high level function that allow
+                other to use the implementation. In the example for the calculation below, the Calculator class allows
+                all others to see the add method and use that method to add numbers. But all the implementation with the
+                calculations creating and getting the result stay private as other classes do not need that information
+                they just need the addition function to work.
+                    <div class="col-md-8">
+                    <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-4 d-flex flex-column position-static">
+                            <img src="../static/images/abs.png" class="d-block w-100" alt="..." height=300>
+                            <div class="piccap">
+                                Example of Abstraction in the Calculator
+                            </div>
+                        </div>
+                    </div>
+                </div>
                 </p>
 
 
@@ -85,16 +115,28 @@
         <div class="col-md-4">
             <span class="position-sticky" style="top: 2rem;">
 
-                <img src="../static/images/cicdex2.png" class="d-block w-100" alt="..." height=250>
+                <img src="../static/images/oopp.png" class="d-block w-100" alt="..." height=250>
                 <div class="piccap">
-                    Courtesy of semaphoreci.com
+                    Courtesy of imaginarycloud.com
                 </div>
                 <br>
                 <br>
 
-                <img src="../static/images/cicdex.png" class="d-block w-100" alt="..." height=250>
+                <img src="../static/images/oopp2.png" class="d-block w-100" alt="..." height=250>
                 <div class="piccap">
-                    Courtesy of opsani.com
+                    Courtesy of facebook.com
+                </div>
+                <br>
+                <div class="col-md-12">
+                    <div class="row g-2 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-2 d-flex flex-column position-static">
+                            <span class="boldunder">References: </span><br>
+                            <p class="fs-8"><a
+                                    href="https://www.freecodecamp.org/news/object-oriented-programming-concepts-21bb035f7260/">https://www.freecodecamp.org/news/object-oriented-programming-concepts</a>
+                            <br>
+                            <p class="fs-8"><a href="https://www.techtarget.com/searchapparchitecture/definition/object-oriented-programming-OOP">https://www.techtarget.com/</a>
+                        </div>
+                    </div>
                 </div>
             </span>
         </div>
