@@ -3,10 +3,13 @@
     <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
             <h1 class="display-4 fst-italic">S.O.L.I.D. in Calculator</h1>
-            <p class="lead my-3"> Calculator Integration and Continuous Deployment is the practice of running a program
-                fully while editing the source code. CI/CD allows for testing and experimentation as a developer is
-                going through the process of a building a project. It is also used to get apps to consumers as quickly
-                as possible and allow for changes based on the consumers wants and needs as it is seen fit.</p>
+            <p class="lead my-3"> SOLID is can be described as the roadway in which OOP drives down. It sets up the
+                signs and directions
+                for OOP through the 5 key principles. The principles are made so that every programmer has similar
+                styling
+                information can easier be understood between two programmer.
+                These principles are the backbone on which this calculator project was
+                built.</p>
         </div>
     </div>
 
@@ -21,64 +24,103 @@
 
                 <br>
                 <br>
-                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
-                        The Single-Responsibility Principle
-                    </h5>
-                    <p>
-                        This principle states that a class should only have to do a single thing. This is for
-                        simplicity and usability, a class that does more than one thing may get confusing to use and
-                        even more difficult to test. This principle is shown in different parts of the calculator. The
-                        calculation only do their said calculation. While the Division calculation does division and a
-                        check for dividing by zero, the only real act it takes is the dividing of 2 numbers. This principle
-                        carries over into the test. There is not one test that check addition and subtraction because
-                        that test would carry too much of the logic and if something was wrong with either class there
-                        would be no way to know which class had the issues just based on that test.
-                    </p>
-                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
-                        The Open-Closed Principle
-                    </h5>
-                    <p>
-                        When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
-                        container image was also updated. This was also done through one of the workflows check as it
-                        allowed for connection to Docker Hub in the source code.
-                    </p>
-                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
-                        The Liskov Substitution Principle
-                    </h5>
-                    <p>
-                        Defines a part of the relationship between the inherited 'parent' and 'child' class. In this
-                        calculator, there should be no dependency in a 'child' class like Addition that a the 'parent'
-                        class of it, Calculation, needs into order to operate properly.
-                    </p>
-                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
-                        The Interface Segregation Principle
-                    </h5>
-                    <p>
-                        Sets up Inheritance. The bigger the class the harder it is to use.
-                    </p>
-                    <h5 class="pb-4 mb-4 fst-italic border-bottom">
-                        The Dependency Inversion Principle
-                    </h5>
-                    <p>
-                        When the main branch was actually updated, this triggered a deployment to Dockerhub so that the
-                        container image was also updated. This was also done through one of the workflows check as it
-                        allowed for connection to Docker Hub in the source code.
-                    </p>
+                <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                    The Single-Responsibility Principle
+                </h5>
+                <p>
+                    This principle states that a class should only have to do a single thing. This is for
+                    simplicity and usability, a class that does more than one thing may get confusing to use and
+                    even more difficult to test. This principle is shown in different parts of the calculator. The
+                    calculation only do their said calculation. While the Division calculation does division and a
+                    check for dividing by zero, the only real act it takes is the dividing of 2 numbers. This principle
+                    carries over into the test. There is not one test that check addition and subtraction because
+                    that test would carry too much of the logic and if something was wrong with either class there
+                    would be no way to know which class had the issues just based on that test.
+                </p>
+                <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                    The Open-Closed Principle
+                </h5>
+                <p>
+                    This principle states that objects must be open for extension but closed for modification. This
+                    means that once the code is finished for an object that object is done with what it does. If it
+                    works properly then it should be left alone and if anyone wants to add to the object then should
+                    extend on it outside the object itself. In this calculator, all objects were created with one
+                    purpose. This principle was followed because no objects in this code were modified once there
+                    working code was finished. There were plenty of situations where external extensions had to be made
+                    but
+                    no objects were modified.
+                </p>
+                <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                    The Liskov Substitution Principle
+                </h5>
+                <p>
+                    Defines the relationship between the inherited 'parent' and 'child' class. Stating that a child
+                    should be substitutable for a parent class but no parents class should have a dependcy on a child
+                    class. This means that a child class inherites all the methods and properties of a parent class
+                    and therefore can be substituted for it. But a parent class should be able to work on its own
+                    without any necessary help from a child class. This calculator follows this principle as in the
+                    few inherited classes that there are. The child classes take in all necessary parts of the parent
+                    class yet the parent class stays avaibale for use without a child class. The best example of this
+                    in the calculator is the operations classes being children of the Calculations class. They all use
+                    the conversion for tuples to list to tuples in order to get their results and therefore can be
+                    substituted if necessary but the Calculation class still works without any the children.
+                </p>
+                <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                    The Interface Segregation Principle
+                </h5>
+                <p>
+                    This principle states that classes should do one and only one action. A class cannot be made to
+                    perform multiple actions as it is better to separate the multiple actions into subclasses. The
+                    best example of this principle is also with the Calculation class and operation subclasses. The
+                    Calculation class does not do addition or subtraction it only provides a tuple list that is
+                    functional for floating point numbers. It then allows the operations classes to use this function
+                    in order to do their own operations. Therefore, even though classes are inheriting an action
+                    they are still only using that action to do the one thing they are made to do.
+                </p>
+                <h5 class="pb-4 mb-4 fst-italic border-bottom">
+                    The Dependency Inversion Principle
+                </h5>
+                <p>
+                    This principle states that functions can call each other. It is vital in this calculator that
+                    function can call and depend on one another. The calculator would not work if dependencies did
+                    not go back and forth between the classes. A great example of this is within the operations. The
+                    operations need to be able to call upon themselves to perform the actions of adding, subtracting,
+                    multiplying or dividing one value from another.
+                </p>
             </article>
         </div>
         <div class="col-md-4">
             <div class="position-sticky" style="top: 2rem;">
 
-                <img src="../static/images/cicdex2.png" class="d-block w-100" alt="..." height=250>
+                <img src="../static/images/solid.png" class="d-block w-100" alt="..." height=250>
                 <div class="piccap">
-                    Courtesy of semaphoreci.com
+                    Courtesy of medium.com
                 </div>
                 <br>
                 <br>
 
-                <img src="../static/images/cicdex.png" class="d-block w-100" alt="..." height=250>
+                <img src="../static/images/solid2.png" class="d-block w-100" alt="..." height=250>
                 <div class="piccap">
-                    Courtesy of opsani.com
+                    Courtesy of stackoverflow.com
+                </div>
+                <br>
+                <br>
+
+                <img src="../static/images/solidroad.png" class="d-block w-100" alt="..." height=250>
+                <div class="piccap">
+                    Courtesy of kendallco.com
+                </div>
+                <br>
+                <div class="col-md-12">
+                    <div class="row g-2 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                        <div class="col p-2 d-flex flex-column position-static">
+                            <span class="boldunder">References: </span><br>
+                            <p class="fs-8"><a
+                                    href="https://www.digitalocean.com/community/conceptual_articles/s-o-l-i-d-the-first-five-principles-of-object-oriented-design#dependency-inversion-principle">https://www.digitalocean.com/</a>
+                            <br>
+                            <p class="fs-8"><a href="https://en.wikipedia.org/wiki/SOLID">https://en.wikipedia.org/wiki/SOLID</a>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>

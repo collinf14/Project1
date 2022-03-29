@@ -3,13 +3,11 @@
     <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
         <div class="col-md-6 px-0">
             <h1 class="display-4 fst-italic">Object Oriented Programming</h1>
-            <p class="lead my-3"> Object-oriented programming (OOP) is a computer programming model that organizes
-                software design around data, or objects, rather than functions and logic. An object can be defined as a
-                data field that has unique attributes and behavior. OOP focuses on the objects that developers want to
-                manipulate rather than the logic required to manipulate them. This approach to programming is
-                well-suited for programs that are large, complex and actively updated or maintained.
-                is a computer programming model that uses objects to describe its actions. An object is a unique data
-                field that takes in
+            <p class="lead my-3"> Object-oriented programming (OOP)
+                is a computer programming model that is organized around objects, as the name suggests. It uses these
+                objects to describe pretty much all if its actions. An object is a field holds data with
+                unique attributes or behavior. This style of programming is best suited for large projects that needs
+                to be constant updated and maintained. In order to get a grip on key terminology read below.
             </p>
         </div>
     </div>
@@ -43,19 +41,19 @@
                     <li><span class="boldunder">constructor</span> is the first method called of a class that sets up
                         data for objects
                     </li>
-                    <li><span class="boldunder">fixture</span> allows you to maintain a fixed and well-known environment
-                        for testing
+                    <li><span class="boldunder">fixture</span> allows for maintaining a proper testing environment
                     </li>
-                    <li><span class="boldunder">type hint</span> means to provide hints to a function to only accept the
-                        given data type. It is also a method by which one can force a function to accept the desired
+                    <li><span class="boldunder">type hint</span> means to providing hints to a function so tat it
+                        will accept the wanted data type, normally used force a function to accept the desired
                         data type
                     </li>
-                    <li><span class="boldunder">type cast</span> is a way of changing an object from one data type to
-                        the next that is used to ensure a function handles the variables correctly
+                    <li><span class="boldunder">type cast</span>
+                        means to change or cast over an object so that it is a different data type than before, this is
+                        normally used to make sure it will work with other variables
                     </li>
-                    <li><span class="boldunder">unit test</span> is a program that test classes. Each test case consists
-                        of a fixed sequence of method invocations with fixed arguments that explores a particular aspect
-                        of the behavior of the class under the test
+                    <li><span class="boldunder">unit test</span> is what the file used for testing are called. In this
+                        calculator, there are many unit tests used in AAA Testing format. They are all the files that end
+                        with _test.py
                     </li>
                     <li><span class="boldunder">static</span> means that the variable or method is available at the
                         class level. In other words, one doesn't need to create an instance of the class to access it
@@ -78,11 +76,10 @@
                         be called without instantiating an object of its class. Almost like a global property. Example
                         in this calculator is the result property that can be called without
                     </li>
-                    <li><span class="boldunder">encapsulation</span> is a principle that states all important
-                        information is contained inside an object and only select information is exposed. The
-                        implementation and state of each object are privately held inside a defined class. Other objects
-                        do not have access to this class or the authority to make changes. They are only able to call a
-                        list of public functions or methods
+                    <li><span class="boldunder">encapsulation</span>
+                        is a principle centered about keep necessary information in an object private only to that object. This
+                        means that another object is not able to access or use the methods or properties that are
+                        encapsulated in another object.
                     </li>
                     <li><span class="boldunder">inheritance</span> means that classes can reuse code from other classes.
                         An inherited class will gain the properties and methods of the class it is inheriting from. The
@@ -95,9 +92,10 @@
                         object. Without this property, each object would have to check itself each and everytime it tried to
                         use a method which would not be satisfactory.
                     </li>
-                    <li><span class="boldunder">abstraction</span> means that objects only reveal internal mechanisms
-                        that are relevant for the use of other objects, hiding any unnecessary implementation code. The
-                        derived class can have its functionality extended
+                    <li><span class="boldunder">abstraction</span> means that objects only other objects to access the
+                        high level mechanisms that would be necessary for another object. The implementation code that
+                        makes some actions should stay private as it is not necessary for another objects use of a
+                        mechanism and would only slow down the process.
                     </li>
                     <li><span class="boldunder">Overview of SOLID</span>
                         <ul class="list-unstyled">
@@ -105,16 +103,13 @@
                             Single-responsibility Principle, Open-closed Principle, Liskov Substitution Principle,
                             Interface Segregation Principle, and Dependency Inversion Principle. Single-responsibility
                             Principle (SRP) states: A class should have one and only 1 job. In this calculator,
-                            the only thing the Addition class does is add.
-                            Open-closed Principle (OCP) states: Objects or entities
+                            the only thing the Addition class does is add its giving numbers.
+                            Open-closed Principle (OCP) states: Objects
                             should be open for extension but closed for modification. Liskov Substitution Principle
-                            states: Let q(x) be a property provable about objects of x of type T. Then q(y) should be
-                            provable for objects y of type S where S is a subtype of T. Interface segregation principle
-                            states: A client should never be forced to implement an interface that it doesn’t use, or
-                            clients shouldn’t be forced to depend on methods they do not use. Dependency inversion
-                            principle states: Entities must depend on abstractions, not on concretions. It states that
-                            the high-level module must not depend on the low-level module, but they should depend on
-                            abstractions.
+                            states the relationship between a parent and child should be substitutable.
+                            Interface segregation principle
+                            states: A class should only do a single action. Dependency inversion
+                            principle states: functions can all each other.
 
                         </ul>
                     </li>
@@ -145,16 +140,23 @@
         <div class="col-md-4">
             <span class="position-sticky" style="top: 2rem;">
 
-                <img src="../static/images/cicdex2.png" class="d-block w-100" alt="..." height=250>
+                <img src="../static/images/oop.png" class="d-block w-100" alt="..." height=250>
                 <div class="piccap">
                     Courtesy of semaphoreci.com
                 </div>
                 <br>
                 <br>
 
-                <img src="../static/images/cicdex.png" class="d-block w-100" alt="..." height=250>
+                <img src="../static/images/oop2.png" class="d-block w-100" alt="..." height=300>
                 <div class="piccap">
                     Courtesy of opsani.com
+                </div>
+                <br>
+                <br>
+
+                <img src="../static/images/dp.png" class="d-block w-100" alt="..." height=350>
+                <div class="piccap">
+                    Courtesy of packtpub.com
                 </div>
             </span>
         </div>

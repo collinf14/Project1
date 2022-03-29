@@ -21,3 +21,7 @@ footer {
 .orange{
     color: chocolate;
 }
+
+.tab{
+    tab-size: 2;
+}
